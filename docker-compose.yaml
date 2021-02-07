@@ -11,7 +11,7 @@ services:
     environment: 
       - VIRTUAL_HOST=serve.carmesiservices.com
       - LETSENCRYPT_HOST=serve.carmesiservices.com
-      - LETSENCRYPT_EMAIL=paulmena14@gmail.com
+      - LETSENCRYPT_EMAIL=paulmena@gmail.com
 
 networks: 
   default:
