@@ -1,4 +1,4 @@
-FROM node:12-alpine3.10
+FROM node:10.16.3
 
 WORKDIR /
 
@@ -8,7 +8,7 @@ RUN npm install
 
 COPY . .
 
-ENV HOST 0.0.0.0   # Insensitive environment variable
+ENV HOST 0.0.0.0  # Insensitive environment variable
 
 EXPOSE 3000
 
