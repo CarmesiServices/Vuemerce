@@ -1,0 +1,19 @@
+version: "3"
+services:
+  web:
+    build: .
+    restart: always
+    container_name: vuemerce
+    ports:
+      - 3000
+    networks: 
+      - default
+    environment: 
+      - VIRTUAL_HOST=serve.carmesiservices.com
+      - LETSENCRYPT_HOST=serve.carmesiservices.com
+      - LETSENCRYPT_EMAIL=paulmena14@gmail.com
+
+networks: 
+  default:
+    external: 
+      name: js-review_default
